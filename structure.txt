@@ -1,0 +1,271 @@
+Folder PATH listing
+Volume serial number is 4CCF-14D8
+C:.
+³   .env
+³   db.sqlite3
+³   manage.py
+³   passenger_wsgi.py
+³   README.md
+³   requirements.txt
+³   structure.txt
+³   
+ÃÄÄÄcore
+³   ³   admin.py
+³   ³   apps.py
+³   ³   auth_urls.py
+³   ³   forms.py
+³   ³   models.py
+³   ³   urls.py
+³   ³   views.py
+³   ³   __init__.py
+³   ³   
+³   ÃÄÄÄmigrations
+³   ³   ³   0001_initial.py
+³   ³   ³   __init__.py
+³   ³   ³   
+³   ³   ÀÄÄÄ__pycache__
+³   ³           0001_initial.cpython-313.pyc
+³   ³           __init__.cpython-313.pyc
+³   ³           
+³   ÀÄÄÄ__pycache__
+³           admin.cpython-313.pyc
+³           apps.cpython-313.pyc
+³           auth_urls.cpython-313.pyc
+³           forms.cpython-313.pyc
+³           models.cpython-313.pyc
+³           urls.cpython-313.pyc
+³           views.cpython-313.pyc
+³           __init__.cpython-313.pyc
+³           
+ÃÄÄÄprojectmanager
+³   ³   settings.py
+³   ³   urls.py
+³   ³   wsgi.py
+³   ³   __init__.py
+³   ³   
+³   ÀÄÄÄ__pycache__
+³           settings.cpython-313.pyc
+³           urls.cpython-313.pyc
+³           wsgi.cpython-313.pyc
+³           __init__.cpython-313.pyc
+³           
+ÃÄÄÄstaticfiles
+³   ÃÄÄÄadmin
+³   ³   ÃÄÄÄcss
+³   ³   ³   ³   autocomplete.css
+³   ³   ³   ³   base.css
+³   ³   ³   ³   changelists.css
+³   ³   ³   ³   dark_mode.css
+³   ³   ³   ³   dashboard.css
+³   ³   ³   ³   forms.css
+³   ³   ³   ³   login.css
+³   ³   ³   ³   nav_sidebar.css
+³   ³   ³   ³   responsive.css
+³   ³   ³   ³   responsive_rtl.css
+³   ³   ³   ³   rtl.css
+³   ³   ³   ³   unusable_password_field.css
+³   ³   ³   ³   widgets.css
+³   ³   ³   ³   
+³   ³   ³   ÀÄÄÄvendor
+³   ³   ³       ÀÄÄÄselect2
+³   ³   ³               LICENSE-SELECT2.md
+³   ³   ³               select2.css
+³   ³   ³               select2.min.css
+³   ³   ³               
+³   ³   ÃÄÄÄimg
+³   ³   ³   ³   calendar-icons.svg
+³   ³   ³   ³   icon-addlink.svg
+³   ³   ³   ³   icon-alert.svg
+³   ³   ³   ³   icon-calendar.svg
+³   ³   ³   ³   icon-changelink.svg
+³   ³   ³   ³   icon-clock.svg
+³   ³   ³   ³   icon-deletelink.svg
+³   ³   ³   ³   icon-hidelink.svg
+³   ³   ³   ³   icon-no.svg
+³   ³   ³   ³   icon-unknown-alt.svg
+³   ³   ³   ³   icon-unknown.svg
+³   ³   ³   ³   icon-viewlink.svg
+³   ³   ³   ³   icon-yes.svg
+³   ³   ³   ³   inline-delete.svg
+³   ³   ³   ³   LICENSE
+³   ³   ³   ³   README.txt
+³   ³   ³   ³   search.svg
+³   ³   ³   ³   selector-icons.svg
+³   ³   ³   ³   sorting-icons.svg
+³   ³   ³   ³   tooltag-add.svg
+³   ³   ³   ³   tooltag-arrowright.svg
+³   ³   ³   ³   
+³   ³   ³   ÀÄÄÄgis
+³   ³   ³           move_vertex_off.svg
+³   ³   ³           move_vertex_on.svg
+³   ³   ³           
+³   ³   ÀÄÄÄjs
+³   ³       ³   actions.js
+³   ³       ³   autocomplete.js
+³   ³       ³   calendar.js
+³   ³       ³   cancel.js
+³   ³       ³   change_form.js
+³   ³       ³   core.js
+³   ³       ³   filters.js
+³   ³       ³   inlines.js
+³   ³       ³   jquery.init.js
+³   ³       ³   nav_sidebar.js
+³   ³       ³   popup_response.js
+³   ³       ³   prepopulate.js
+³   ³       ³   prepopulate_init.js
+³   ³       ³   SelectBox.js
+³   ³       ³   SelectFilter2.js
+³   ³       ³   theme.js
+³   ³       ³   unusable_password_field.js
+³   ³       ³   urlify.js
+³   ³       ³   
+³   ³       ÃÄÄÄadmin
+³   ³       ³       DateTimeShortcuts.js
+³   ³       ³       RelatedObjectLookups.js
+³   ³       ³       
+³   ³       ÀÄÄÄvendor
+³   ³           ÃÄÄÄjquery
+³   ³           ³       jquery.js
+³   ³           ³       jquery.min.js
+³   ³           ³       LICENSE.txt
+³   ³           ³       
+³   ³           ÃÄÄÄselect2
+³   ³           ³   ³   LICENSE.md
+³   ³           ³   ³   select2.full.js
+³   ³           ³   ³   select2.full.min.js
+³   ³           ³   ³   
+³   ³           ³   ÀÄÄÄi18n
+³   ³           ³           af.js
+³   ³           ³           ar.js
+³   ³           ³           az.js
+³   ³           ³           bg.js
+³   ³           ³           bn.js
+³   ³           ³           bs.js
+³   ³           ³           ca.js
+³   ³           ³           cs.js
+³   ³           ³           da.js
+³   ³           ³           de.js
+³   ³           ³           dsb.js
+³   ³           ³           el.js
+³   ³           ³           en.js
+³   ³           ³           es.js
+³   ³           ³           et.js
+³   ³           ³           eu.js
+³   ³           ³           fa.js
+³   ³           ³           fi.js
+³   ³           ³           fr.js
+³   ³           ³           gl.js
+³   ³           ³           he.js
+³   ³           ³           hi.js
+³   ³           ³           hr.js
+³   ³           ³           hsb.js
+³   ³           ³           hu.js
+³   ³           ³           hy.js
+³   ³           ³           id.js
+³   ³           ³           is.js
+³   ³           ³           it.js
+³   ³           ³           ja.js
+³   ³           ³           ka.js
+³   ³           ³           km.js
+³   ³           ³           ko.js
+³   ³           ³           lt.js
+³   ³           ³           lv.js
+³   ³           ³           mk.js
+³   ³           ³           ms.js
+³   ³           ³           nb.js
+³   ³           ³           ne.js
+³   ³           ³           nl.js
+³   ³           ³           pl.js
+³   ³           ³           ps.js
+³   ³           ³           pt-BR.js
+³   ³           ³           pt.js
+³   ³           ³           ro.js
+³   ³           ³           ru.js
+³   ³           ³           sk.js
+³   ³           ³           sl.js
+³   ³           ³           sq.js
+³   ³           ³           sr-Cyrl.js
+³   ³           ³           sr.js
+³   ³           ³           sv.js
+³   ³           ³           th.js
+³   ³           ³           tk.js
+³   ³           ³           tr.js
+³   ³           ³           uk.js
+³   ³           ³           vi.js
+³   ³           ³           zh-CN.js
+³   ³           ³           zh-TW.js
+³   ³           ³           
+³   ³           ÀÄÄÄxregexp
+³   ³                   LICENSE.txt
+³   ³                   xregexp.js
+³   ³                   xregexp.min.js
+³   ³                   
+³   ÀÄÄÄrest_framework
+³       ÃÄÄÄcss
+³       ³       bootstrap-theme.min.css
+³       ³       bootstrap-theme.min.css.map
+³       ³       bootstrap-tweaks.css
+³       ³       bootstrap.min.css
+³       ³       bootstrap.min.css.map
+³       ³       default.css
+³       ³       font-awesome-4.0.3.css
+³       ³       prettify.css
+³       ³       
+³       ÃÄÄÄdocs
+³       ³   ÃÄÄÄcss
+³       ³   ³       base.css
+³       ³   ³       highlight.css
+³       ³   ³       jquery.json-view.min.css
+³       ³   ³       
+³       ³   ÃÄÄÄimg
+³       ³   ³       favicon.ico
+³       ³   ³       grid.png
+³       ³   ³       
+³       ³   ÀÄÄÄjs
+³       ³           api.js
+³       ³           highlight.pack.js
+³       ³           jquery.json-view.min.js
+³       ³           
+³       ÃÄÄÄfonts
+³       ³       fontawesome-webfont.eot
+³       ³       fontawesome-webfont.svg
+³       ³       fontawesome-webfont.ttf
+³       ³       fontawesome-webfont.woff
+³       ³       glyphicons-halflings-regular.eot
+³       ³       glyphicons-halflings-regular.svg
+³       ³       glyphicons-halflings-regular.ttf
+³       ³       glyphicons-halflings-regular.woff
+³       ³       glyphicons-halflings-regular.woff2
+³       ³       
+³       ÃÄÄÄimg
+³       ³       glyphicons-halflings-white.png
+³       ³       glyphicons-halflings.png
+³       ³       grid.png
+³       ³       
+³       ÀÄÄÄjs
+³               ajax-form.js
+³               bootstrap.min.js
+³               coreapi-0.1.1.js
+³               csrf.js
+³               default.js
+³               jquery-3.7.1.min.js
+³               load-ajax-form.js
+³               prettify-min.js
+³               
+ÀÄÄÄtemplates
+    ³   base.html
+    ³   
+    ÃÄÄÄcore
+    ³       dashboard.html
+    ³       project_detail.html
+    ³       project_form.html
+    ³       project_list.html
+    ³       task_form.html
+    ³       task_list.html
+    ³       worklog_form.html
+    ³       worklog_list.html
+    ³       
+    ÀÄÄÄregistration
+            login.html
+            register.html
+            
