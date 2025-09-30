@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects - Project Manager{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-8">
+        <div>
+            <h1 class="text-3xl font-bold text-gray-900">Projects</h1>
+            <p class="text-gray-600 mt-2">Manage your projects and track progress</p>
+        </div>
+        <a href="{% url 'project_create' %}" class="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-medium flex items-center">
+            <i class="fas fa-plus mr-2"></i>New Project
+        </a>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for project in projects %}
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-900 truncate">{{ project.name }}</h3>
+                        <div class="flex items-center space-x-2">
+                            {% if project.created_by == user %}
+                                <i class="fas fa-crown text-yellow-500" title="Project Owner"></i>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">{{ project.description|default:"No description available" }}</p>
+                    
+                    <!-- Progress Bar -->
+                    <div class="mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium text-gray-700">Progress</span>
+                            <span class="text-sm text-gray-500">{{ project.completed_tasks }}/{{ project.total_tasks }} tasks</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-primary-600 h-2 rounded-full transition-all duration-300" 
+                                 style="width: {{ project.progress_percentage }}%"></div>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs text-gray-500">{{ project.progress_percentage }}% complete</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Stats -->
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-users mr-1"></i>
+                            <span>{{ project.members.count }} member{{ project.members.count|pluralize }}</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar mr-1"></i>
+                            <span>{{ project.created_at|date:"M d, Y" }}</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Button -->
+                    <div class="flex space-x-2">
+                        <a href="{% url 'project_detail' project.pk %}" 
+                           class="flex-1 bg-primary-600 text-white text-center py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-span-full flex flex-col items-center justify-center py-12 text-gray-500">
+                <i class="fas fa-folder-open text-6xl mb-4"></i>
+                <h3 class="text-xl font-medium mb-2">No projects yet</h3>
+                <p class="text-center mb-6 max-w-md">Get started by creating your first project to organize your tasks and collaborate with your team.</p>
+                <a href="{% url 'project_create' %}" class="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-medium flex items-center">
+                    <i class="fas fa-plus mr-2"></i>Create Your First Project
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
