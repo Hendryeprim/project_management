@@ -85,7 +85,7 @@
                                                         <span class="text-xs text-gray-500">{{ task.due_date }}</span>
                                                     {% endif %}
                                                 </div>
-                                                <button onclick="updateTaskStatus({{ task.id }}, 'in_progress')" 
+                                                <button onclick="updateTaskStatus('{{ task.id }}', 'in_progress')" 
                                                         class="text-xs text-blue-600 hover:text-blue-800">
                                                     Start →
                                                 </button>
@@ -115,7 +115,7 @@
                                                         <span class="text-xs text-gray-500">{{ task.due_date }}</span>
                                                     {% endif %}
                                                 </div>
-                                                <button onclick="updateTaskStatus({{ task.id }}, 'done')" 
+                                                <button onclick="updateTaskStatus('{{ task.id }}', 'done')" 
                                                         class="text-xs text-green-600 hover:text-green-800">
                                                     Complete →
                                                 </button>
