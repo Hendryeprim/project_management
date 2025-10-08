@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+*.env
+
+# SQLite database (if used)
+db.sqlite3
+
+# Static and media (generated)
+staticfiles/
+media/
