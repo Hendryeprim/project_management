@@ -92,22 +92,26 @@
                         <!-- Task Actions -->
                         <div class="flex items-center space-x-2 ml-4">
                             {% if task.status == 'todo' %}
-                                <button onclick="updateTaskStatus({{ task.id }}, 'in_progress')" 
+                                <button data-task-id="{{ task.id }}" data-new-status="in_progress"
+                                        onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
                                         class="bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700 transition-colors">
                                     Start
-                                </button>
                             {% elif task.status == 'in_progress' %}
-                                <button onclick="updateTaskStatus({{ task.id }}, 'done')" 
+                                <button data-task-id="{{ task.id }}" data-new-status="done"
+                                        onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
                                         class="bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700 transition-colors">
                                     Complete
                                 </button>
-                                <button onclick="updateTaskStatus({{ task.id }}, 'todo')" 
+                                <button data-task-id="{{ task.id }}" data-new-status="todo"
+                                        onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
                                         class="bg-gray-600 text-white px-3 py-1 rounded text-sm hover:bg-gray-700 transition-colors">
-                                    Reset
-                                </button>
                             {% else %}
-                                <button onclick="updateTaskStatus({{ task.id }}, 'in_progress')" 
+                                <button data-task-id="{{ task.id }}" data-new-status="in_progress"
+                                        onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
                                         class="bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700 transition-colors">
+                                    Reopen
+                                </button>
+                            {% endif %}
                                     Reopen
                                 </button>
                             {% endif %}
