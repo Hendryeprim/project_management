@@ -96,6 +96,7 @@
                                         onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
                                         class="bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700 transition-colors">
                                     Start
+                                </button>
                             {% elif task.status == 'in_progress' %}
                                 <button data-task-id="{{ task.id }}" data-new-status="done"
                                         onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
@@ -105,13 +106,12 @@
                                 <button data-task-id="{{ task.id }}" data-new-status="todo"
                                         onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
                                         class="bg-gray-600 text-white px-3 py-1 rounded text-sm hover:bg-gray-700 transition-colors">
+                                    Move to To-Do
+                                </button>
                             {% else %}
                                 <button data-task-id="{{ task.id }}" data-new-status="in_progress"
                                         onclick="updateTaskStatus(this.dataset.taskId, this.dataset.newStatus)"
                                         class="bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700 transition-colors">
-                                    Reopen
-                                </button>
-                            {% endif %}
                                     Reopen
                                 </button>
                             {% endif %}
